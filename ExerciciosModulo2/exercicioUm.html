@@ -1,0 +1,36 @@
+
+
+<html>  
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício curso JavaScript </title>
+
+    </head>
+
+    <body>
+        <div id="app">
+            <button class="square"> Criar caixa </button>
+
+        </div>
+
+        <script>
+
+            var btn = document.querySelector('.square');
+
+            btn.onclick = function(){
+                var divElement = document.createElement('div');
+
+                divElement.style.width = '100px';
+                divElement.style.height = '100px';
+                divElement.style.backgroundColor = '#f00';
+
+                var containerElement = document.querySelector('#app');
+                containerElement.appendChild(divElement);
+            }
+        
+        </script>
+
+    </body>
+    
+</html>

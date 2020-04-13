@@ -1,0 +1,49 @@
+
+<html> 
+
+    <head> 
+        <title> Curso JavaScript </title>
+ 
+    </head>
+    <body> 
+       
+         <script> 
+
+function retornaSexo(sexo){
+             // M, F
+             // Masculino, Feminino
+
+             if(sexo === 'M'){
+                 return 'Masculino'
+             }else if(sexo === 'F'){
+                 return 'Feminino'
+             }else{
+                 return 'Por favor, selecione Masculino ou Feminino'
+             }
+}
+
+         var resultado = retornaSexo('M');
+
+         console.log(resultado);
+         
+function retornaTimes(times){
+
+            switch(times){
+                case 'Verde':
+                    return 'Palmeiras';
+                case 'Vermelho':
+                    return 'São Paulo';
+                default:
+                    return 'Corinthians';
+            }
+
+}
+         var resultadoTimes = retornaTimes('Verde');
+         console.log(resultadoTimes);
+             
+         </script>
+ 
+    </body>
+ 
+ </html>
+ 

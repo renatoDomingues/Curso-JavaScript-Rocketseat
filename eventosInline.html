@@ -1,0 +1,58 @@
+
+<html> 
+
+    <head> 
+        <meta charset="UTF-8">
+        <title> Curso JavaScript </title>
+ 
+    </head>
+    <body> 
+
+        <!-- Manipulando a DOM -->
+        <div id="app">
+
+            <!--
+            <input type="text" name="nome" id="nome" class="nome" />
+            -->
+
+            <input type="text" name="nome" />
+            <button class="botao"> Adicionar </button>
+            
+        </div>
+       
+         <script>  
+
+         var inputElement = document.querySelector('input[name=nome]');
+         var btnElement = document.querySelector('button.botao');
+
+         btnElement.onclick = function(){
+             var text = inputElement.value;
+             //alert('Botão clicado!');
+             alert(text);
+         }
+
+         /*
+         var inputElement = document.querySelector('body div#app input');
+         console.log(inputElement);
+         */
+
+         /*
+         var inputElement = document.getElementById('nome');
+         console.log(inputElement);
+         */
+
+         /*
+         var inputElement = document.getElementsByTagName('input')[0];
+         console.log(inputElement)
+          */
+
+          /*
+          var inputElement = document.getElementsByClassName('nome')[0];
+          console.log(inputElement); 
+          */
+
+         </script>
+ 
+    </body>
+ 
+ </html>

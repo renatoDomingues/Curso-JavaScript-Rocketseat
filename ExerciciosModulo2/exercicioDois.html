@@ -1,0 +1,46 @@
+
+<html>  
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício curso JavaScript </title>
+
+    </head>
+
+    <body>
+
+        <div id="app">
+            <button onclick="criaCaixa()"> Mudar de cor </button>
+
+        </div>
+
+       <script>
+
+            function criaCaixa(){
+               var randomColor = Math.floor(Math.random()*16777215).toString(16);
+               
+               var boxElement = document.querySelector('button');
+               boxElement.setAttribute('style', 'background-color:#' + randomColor + ';');
+               boxElement.setAttribute('id', "a"+randomColor);
+               boxElement.setAttribute("onclick", 'mudarCor(this)');
+
+               var criarElement = document.querySelector('#app');
+               criarElement.appendChild(boxElement);
+            }
+
+            function mudarCor(elemento){
+               var boxId = elemento.id;
+               var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+               var boxSelector = document.querySelector("#" + boxId);
+               boxSelector.setAttribute('style', 'background-color:#' + randomColor + ';');
+
+               console.log(boxId);
+            }
+           
+        
+       </script>
+
+    </body>
+    
+</html>

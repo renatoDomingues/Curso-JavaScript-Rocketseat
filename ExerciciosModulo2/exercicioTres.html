@@ -1,0 +1,32 @@
+
+<html>  
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício curso JavaScript </title>
+
+    </head>
+
+    <body>
+
+        <ul id="ul"> </ul>
+
+        <script>
+
+            var names = ["Diego", "Gabriel", "Lucas", "Debora"];
+
+            ulElement = document.querySelector('#ul');
+
+            for(name of names){
+                var listElements = document.createElement('li');
+                var textElement = document.createTextNode(name);
+
+                listElements.appendChild(textElement);
+                ulElement.appendChild(listElements);
+            }
+        
+        </script>
+
+    </body>
+    
+</html

@@ -1,0 +1,37 @@
+
+<html>  
+
+    <head>
+        <meta charset="UTF-8">
+        <title> Exercício curso JavaScript </title>
+
+    </head>
+
+    <body>
+
+        <script>
+
+            var usuarios =[
+                {
+                    nome: 'Renato',
+                    habilidades: ['Javascript', 'ReactJS', 'C']
+                },
+                {
+                    nome: 'Rodrigo',
+                    habilidades: ['Javascript', 'React Native', 'Node']
+                }
+            ];
+
+            function showMyObj(aUsers){
+                for(var habils of aUsers){
+                    console.log('O ' + habils.nome + ' possui as habilidades: ' + habils.habilidades.join());
+                }
+            };
+            var teste = showMyObj(usuarios);
+
+            //Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um arraycom um separador utilize o join.
+        
+        </script>
+    </body>
+    
+</html>
